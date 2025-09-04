@@ -1,0 +1,148 @@
+site_name: Wiki DBA
+site_description: Documentación de Administración de Bases de Datos
+site_author: Palomero96
+
+# TEMA MATERIAL CON MODO OSCURO PREMIUM
+theme:
+  name: material
+  palette:
+    # MODO CLARO
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Modo oscuro
+    # MODO OSCURO (EXCELENTE)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo claro
+  features:
+    
+    - navigation.sections       # Secciones colapsables
+    - navigation.expand         # Auto-expand
+    - navigation.instant        # Navegación rápida
+    - navigation.tracking       # Seguimiento
+    - search.suggest            # Búsqueda con sugerencias
+    - search.highlight          # Highlight en búsqueda
+    - content.code.copy         # Botón copiar código
+    - content.code.annotate     # Anotaciones código
+    - content.tabs.link         # Tabs de contenido
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/database
+    admonition:
+      note: material/note
+      tip: material/lightbulb
+      warning: material/alert
+      danger: material/fire
+
+# PLUGINS ESENCIALES
+plugins:
+  - search
+  - git-revision-date-localized
+
+# EXTENSIONES MARKDOWN AVANZADAS
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - codehilite
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+# NAVEGACIÓN INTELIGENTE (sin dropdowns ficticios)
+nav:
+  - Inicio: index.md
+  - MySQL: 
+    - 🐬 Overview: mysql/index.md
+    - 📥 Instalación: mysql/installation/index.md
+    - ⚙️ Configuración: mysql/configuration/index.md
+    - 💾 Backup: mysql/backup-recovery/index.md
+    - 🚀 Performance: mysql/performance/index.md
+    - 🔁 Replicación: mysql/replication/index.md
+    - 🔒 Seguridad: mysql/security/index.md
+    - 📊 Monitoring: mysql/monitoring/index.md
+    - 🔧 Troubleshooting: mysql/troubleshooting/index.md
+  - PostgreSQL: 
+    - 🐘 Overview: postgresql/index.md
+    - 📥 Instalación: postgresql/installation/index.md
+    - ⚙️ Configuración: postgresql/configuration/index.md
+    - 💾 Backup: postgresql/backup-recovery/index.md
+    - 🚀 Performance: postgresql/performance/index.md
+    - 🔁 Replicación: postgresql/replication/index.md
+    - 🔒 Seguridad: postgresql/security/index.md
+    - 📊 Monitoring: postgresql/monitoring/index.md
+    - 🔧 Troubleshooting: postgresql/troubleshooting/index.md
+  - Oracle: 
+    - 🏺 Overview: oracle/index.md
+    - 📥 Instalación: oracle/installation/index.md
+    - ⚙️ Configuración: oracle/configuration/index.md
+    - 💾 Backup: oracle/backup-recovery/index.md
+    - 🚀 Performance: oracle/performance/index.md
+    - 🔁 Replicación: oracle/replication/index.md
+    - 🔒 Seguridad: oracle/security/index.md
+    - 📊 Monitoring: oracle/monitoring/index.md
+    - 🔧 Troubleshooting: oracle/troubleshooting/index.md
+  - DB2: 
+    - 🔷 Overview: db2/index.md
+    - 📥 Instalación: db2/installation/index.md
+    - ⚙️ Configuración: db2/configuration/index.md
+    - 💾 Backup: db2/backup-recovery/index.md
+    - 🚀 Performance: db2/performance/index.md
+    - 🔁 Replicación: db2/replication/index.md
+    - 🔒 Seguridad: db2/security/index.md
+    - 📊 Monitoring: db2/monitoring/index.md
+    - 🔧 Troubleshooting: db2/troubleshooting/index.md
+  - General: 
+    - 📚 Best Practices: general/best-practices.md
+    - 🛠️ Troubleshooting: general/troubleshooting.md
+
+# EXTRAS PERSONALIZADOS
+extra:
+  repo_url: https://github.com/Palomero96/Wiki_DBA
+  repo_name: Palomero96/Wiki_DBA
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Palomero96
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/tu-perfil
+    - icon: fontawesome/solid/envelope
+      link: mailto:tu.email@ejemplo.com
+
+  # ANALYTICS (opcional)
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+  # CONSENT (opcional)
+  consent:
+    title: Consentimiento de Cookies
+    description: Usamos cookies para mejorar tu experiencia.
+
+copyright: Copyright &copy; 2024 Palomero96
+
+# PERSONALIZACIÓN AVANZADA CON CSS
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js

@@ -1,0 +1,120 @@
+docs/
+├── index.md
+├── mysql/
+│   ├── index.md
+│   ├── installation/
+│   │   ├── index.md
+│   │   ├── ubuntu.md
+│   │   ├── windows.md
+│   │   └── docker.md
+│   ├── configuration/
+│   │   ├── index.md
+│   │   ├── my-cnf.md
+│   │   └── parameters.md
+│   ├── backup-recovery/
+│   │   ├── index.md
+│   │   ├── logical-backup.md
+│   │   ├── physical-backup.md
+│   │   └── point-in-time-recovery.md
+│   ├── performance/
+│   │   ├── index.md
+│   │   ├── query-optimization.md
+│   │   ├── indexing.md
+│   │   └── innodb-tuning.md
+│   ├── replication/
+│   │   ├── index.md
+│   │   ├── master-slave.md
+│   │   └── group-replication.md
+│   ├── security/
+│   │   ├── index.md
+│   │   ├── users-privileges.md
+│   │   └── encryption.md
+│   ├── monitoring/
+│   │   ├── index.md
+│   │   ├── performance-schema.md
+│   │   └── enterprise-monitor.md
+│   └── troubleshooting/
+│       ├── index.md
+│       ├── common-errors.md
+│       └── maintenance.md
+├── postgresql/
+│   └── ... (la estructura que ya tenemos)
+├── oracle/
+│   ├── index.md
+│   ├── installation/
+│   │   ├── index.md
+│   │   ├── linux.md
+│   │   ├── windows.md
+│   │   └── docker.md
+│   ├── configuration/
+│   │   ├── index.md
+│   │   ├── init-parameters.md
+│   │   └── memory-management.md
+│   ├── backup-recovery/
+│   │   ├── index.md
+│   │   ├── rman-backup.md
+│   │   ├── data-pump.md
+│   │   └── flashback.md
+│   ├── performance/
+│   │   ├── index.md
+│   │   ├── sql-tuning.md
+│   │   ├── indexing.md
+│   │   └── awr-reports.md
+│   ├── replication/
+│   │   ├── index.md
+│   │   ├── data-guard.md
+│   │   └── golden-gate.md
+│   ├── security/
+│   │   ├── index.md
+│   │   ├── users-roles.md
+│   │   ├── tde-encryption.md
+│   │   └── audit-vault.md
+│   ├── monitoring/
+│   │   ├── index.md
+│   │   ├── alert-log.md
+│   │   ├── oem.md
+│   │   └── ash-addm.md
+│   └── troubleshooting/
+│       ├── index.md
+│       ├── ora-errors.md
+│       └── maintenance.md
+└── db2/
+    ├── index.md
+    ├── installation/
+    │   ├── index.md
+    │   ├── linux.md
+    │   ├── windows.md
+    │   └── docker.md
+    ├── configuration/
+    │   ├── index.md
+    │   ├── dbm-cfg.md
+    │   ├── db-cfg.md
+    │   └── memory-config.md
+    ├── backup-recovery/
+    │   ├── index.md
+    │   ├── backup-utility.md
+    │   ├── restore-recovery.md
+    │   └── hdr.md
+    ├── performance/
+    │   ├── index.md
+    │   ├── query-tuning.md
+    │   ├── indexing.md
+    │   └── bufferpools.md
+    ├── replication/
+    │   ├── index.md
+    │   ├── hadr.md
+    │   └── cdc.md
+    ├── security/
+    │   ├── index.md
+    │   ├── authentication.md
+    │   ├── encryption.md
+    │   └── audit.md
+    ├── monitoring/
+    │   ├── index.md
+    │   ├── health-monitor.md
+    │   ├── event-monitor.md
+    │   └── performance-reports.md
+    └── troubleshooting/
+        ├── index.md
+        ├── common-errors.md
+        └── maintenance.md

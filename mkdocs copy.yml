@@ -1,0 +1,203 @@
+site_name: Wiki DBA
+site_description: Documentación de Administración de Bases de Datos
+site_author: Palomero96
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Inicio: index.md
+  - MySQL:
+    - Overview: mysql/index.md
+    - Instalación:
+      - Overview: mysql/installation/index.md
+      - Ubuntu/Debian: mysql/installation/ubuntu.md
+      - Windows: mysql/installation/windows.md
+      - Docker: mysql/installation/docker.md
+    - Configuración:
+      - Overview: mysql/configuration/index.md
+      - my.cnf: mysql/configuration/my-cnf.md
+      - Parámetros: mysql/configuration/parameters.md
+    - Backup & Recovery:
+      - Overview: mysql/backup-recovery/index.md
+      - Backup Lógico: mysql/backup-recovery/logical-backup.md
+      - Backup Físico: mysql/backup-recovery/physical-backup.md
+      - PITR: mysql/backup-recovery/point-in-time-recovery.md
+    - Performance:
+      - Overview: mysql/performance/index.md
+      - Query Optimization: mysql/performance/query-optimization.md
+      - Indexing: mysql/performance/indexing.md
+      - InnoDB Tuning: mysql/performance/innodb-tuning.md
+    - Replicación:
+      - Overview: mysql/replication/index.md
+      - Master-Slave: mysql/replication/master-slave.md
+      - Group Replication: mysql/replication/group-replication.md
+    - Seguridad:
+      - Overview: mysql/security/index.md
+      - Users & Privileges: mysql/security/users-privileges.md
+      - Encryption: mysql/security/encryption.md
+    - Monitoring:
+      - Overview: mysql/monitoring/index.md
+      - Performance Schema: mysql/monitoring/performance-schema.md
+      - Enterprise Monitor: mysql/monitoring/enterprise-monitor.md
+    - Troubleshooting:
+      - Overview: mysql/troubleshooting/index.md
+      - Common Errors: mysql/troubleshooting/common-errors.md
+      - Maintenance: mysql/troubleshooting/maintenance.md
+
+  - PostgreSQL:
+    - Overview: postgresql/index.md
+    - Instalación:
+      - Overview: postgresql/installation/index.md
+      - Ubuntu/Debian: postgresql/installation/ubuntu.md
+      - Windows: postgresql/installation/windows.md
+      - Docker: postgresql/installation/docker.md
+    - Configuración:
+      - Overview: postgresql/configuration/index.md
+      - postgresql.conf: postgresql/configuration/postgresql-conf.md
+      - pg_hba.conf: postgresql/configuration/pg_hba-conf.md
+    - Backup & Recovery:
+      - Overview: postgresql/backup-recovery/index.md
+      - Backup Lógico: postgresql/backup-recovery/logical-backup.md
+      - Backup Físico: postgresql/backup-recovery/physical-backup.md
+      - PITR: postgresql/backup-recovery/point-in-time-recovery.md
+    - Performance:
+      - Overview: postgresql/performance/index.md
+      - Query Optimization: postgresql/performance/query-optimization.md
+      - Indexing: postgresql/performance/indexing.md
+      - Vacuum & Analyze: postgresql/performance/vacuum-analyze.md
+    - Replicación:
+      - Overview: postgresql/replication/index.md
+      - Streaming: postgresql/replication/streaming-replication.md
+      - Lógica: postgresql/replication/logical-replication.md
+    - Seguridad:
+      - Overview: postgresql/security/index.md
+      - Roles & Privileges: postgresql/security/roles-privileges.md
+      - SSL Encryption: postgresql/security/ssl-encryption.md
+    - Monitoring:
+      - Overview: postgresql/monitoring/index.md
+      - pg_stat_activity: postgresql/monitoring/pg_stat_activity.md
+      - Extensions: postgresql/monitoring/extensions.md
+    - Troubleshooting:
+      - Overview: postgresql/troubleshooting/index.md
+      - Common Errors: postgresql/troubleshooting/common-errors.md
+      - Maintenance: postgresql/troubleshooting/maintenance.md
+
+  - Oracle:
+    - Overview: oracle/index.md
+    - Instalación:
+      - Overview: oracle/installation/index.md
+      - Linux: oracle/installation/linux.md
+      - Windows: oracle/installation/windows.md
+      - Docker: oracle/installation/docker.md
+    - Configuración:
+      - Overview: oracle/configuration/index.md
+      - Init Parameters: oracle/configuration/init-parameters.md
+      - Memory Management: oracle/configuration/memory-management.md
+    - Backup & Recovery:
+      - Overview: oracle/backup-recovery/index.md
+      - RMAN Backup: oracle/backup-recovery/rman-backup.md
+      - Data Pump: oracle/backup-recovery/data-pump.md
+      - Flashback: oracle/backup-recovery/flashback.md
+    - Performance:
+      - Overview: oracle/performance/index.md
+      - SQL Tuning: oracle/performance/sql-tuning.md
+      - Indexing: oracle/performance/indexing.md
+      - AWR Reports: oracle/performance/awr-reports.md
+    - Replicación:
+      - Overview: oracle/replication/index.md
+      - Data Guard: oracle/replication/data-guard.md
+      - GoldenGate: oracle/replication/golden-gate.md
+    - Seguridad:
+      - Overview: oracle/security/index.md
+      - Users & Roles: oracle/security/users-roles.md
+      - TDE Encryption: oracle/security/tde-encryption.md
+      - Audit Vault: oracle/security/audit-vault.md
+    - Monitoring:
+      - Overview: oracle/monitoring/index.md
+      - Alert Log: oracle/monitoring/alert-log.md
+      - OEM: oracle/monitoring/oem.md
+      - ASH/ADDM: oracle/monitoring/ash-addm.md
+    - Troubleshooting:
+      - Overview: oracle/troubleshooting/index.md
+      - ORA Errors: oracle/troubleshooting/ora-errors.md
+      - Maintenance: oracle/troubleshooting/maintenance.md
+
+  - DB2:
+    - Overview: db2/index.md
+    - Instalación:
+      - Overview: db2/installation/index.md
+      - Linux: db2/installation/linux.md
+      - Windows: db2/installation/windows.md
+      - Docker: db2/installation/docker.md
+    - Configuración:
+      - Overview: db2/configuration/index.md
+      - DBM Configuration: db2/configuration/dbm-cfg.md
+      - DB Configuration: db2/configuration/db-cfg.md
+      - Memory Config: db2/configuration/memory-config.md
+    - Backup & Recovery:
+      - Overview: db2/backup-recovery/index.md
+      - Backup Utility: db2/backup-recovery/backup-utility.md
+      - Restore & Recovery: db2/backup-recovery/restore-recovery.md
+      - HDR: db2/backup-recovery/hdr.md
+    - Performance:
+      - Overview: db2/performance/index.md
+      - Query Tuning: db2/performance/query-tuning.md
+      - Indexing: db2/performance/indexing.md
+      - Bufferpools: db2/performance/bufferpools.md
+    - Replicación:
+      - Overview: db2/replication/index.md
+      - HADR: db2/replication/hadr.md
+      - CDC: db2/replication/cdc.md
+    - Seguridad:
+      - Overview: db2/security/index.md
+      - Authentication: db2/security/authentication.md
+      - Encryption: db2/security/encryption.md
+      - Audit: db2/security/audit.md
+    - Monitoring:
+      - Overview: db2/monitoring/index.md
+      - Health Monitor: db2/monitoring/health-monitor.md
+      - Event Monitor: db2/monitoring/event-monitor.md
+      - Performance Reports: db2/monitoring/performance-reports.md
+    - Troubleshooting:
+      - Overview: db2/troubleshooting/index.md
+      - Common Errors: db2/troubleshooting/common-errors.md
+      - Maintenance: db2/troubleshooting/maintenance.md
+
+  - General:
+    - Best Practices: general/best-practices.md
+    - Troubleshooting: general/troubleshooting.md
+
+plugins:
+  - search
+  - git-revision-date-localized
+
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - codehilite
+
+extra:
+  repo_url: https://github.com/Palomero96/Wiki_DBA
+  repo_name: Palomero96/Wiki_DBA

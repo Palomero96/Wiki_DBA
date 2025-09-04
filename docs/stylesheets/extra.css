@@ -1,0 +1,4 @@
+.md-sidebar--primary {
+    display: block !important;
+    position: relative; /* evita que se esconda encima del contenido */
+}

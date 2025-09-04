@@ -1,0 +1,102 @@
+site_name: Wiki DBA
+site_description: Documentación de Administración de Bases de Datos
+site_author: Palomero96
+
+# TEMA MATERIAL CON CONFIGURACIÓN AVANZADA
+theme:
+  name: material
+  palette:
+    # Modo claro y oscuro con switcher
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  # ICONOS Y ELEMENTOS VISUALES
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/database
+
+  # FEATURES AVANZADAS
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - instant
+    - announcement.dismiss
+
+  # PLUGINS ADICIONALES DEL TEMA
+  language: es
+
+# CONFIGURACIÓN EXTRAS VISUALES
+extra:
+  # SOCIAL LINKS
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Palomero96
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/davidpalomeromendez
+
+# NAVEGACIÓN
+nav:
+  - Inicio: index.md
+  - MySQL:
+    - Overview: mysql/index.md
+    - Instalación: mysql/installation.md
+    - Optimización: mysql/optimization.md
+  - PostgreSQL:
+    - Overview: postgresql/index.md
+    - Backup & Recovery: postgresql/backup.md
+  - Oracle:
+    - Overview: oracle/index.md
+    - Instalación: oracle/installation.md
+  - DB2:
+    - Overview: oracle/index.md
+    - Instalación: oracle/installation.md
+  - General:
+    - Best Practices: general/best-practices.md
+    - Troubleshooting: general/troubleshooting.md
+
+# PLUGINS
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-authors
+
+# EXTENSIONES MARKDOWN
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - codehilite
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true

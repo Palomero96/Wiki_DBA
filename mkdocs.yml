@@ -4,33 +4,100 @@ site_author: Palomero96
 
 theme:
   name: material
-  palette:
-    primary: blue
-    accent: blue
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - search.suggest
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    
+    # - navigation.tabs.sticky
+    - navigation.prune      # solo expande la sección activa
+    - navigation.path
+    - navigation.tracking
     - search.highlight
-    - content.tabs.link
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+
 
 nav:
-  - Inicio: index.md
-  - MySQL:
-    - Overview: mysql/index.md
-    - Instalación: mysql/installation.md
-    - Optimización: mysql/optimization.md
-  - PostgreSQL:
-    - Overview: postgresql/index.md
-    - Backup & Recovery: postgresql/backup.md
-  - General:
-    - Best Practices: general/best-practices.md
-    - Troubleshooting: general/troubleshooting.md
+  - 🏠 Inicio: index.md
+  
+  # MYSQL - Nivel superior con icono
+  - 🐬 MySQL:
+      - Overview: mysql/index.md
+      - Instalación: mysql/installation/index.md
+      - Configuración: mysql/configuration/index.md
+      - Backup & Recovery: mysql/backup-recovery/index.md
+      - Performance: mysql/performance/index.md
+      - Replicación: mysql/replication/index.md
+      - Seguridad: mysql/security/index.md
+      - Monitoring: mysql/monitoring/index.md
+      - Troubleshooting: mysql/troubleshooting/index.md
+
+  # POSTGRESQL - Nivel superior con icono
+  - 🐘 PostgreSQL:
+      - Overview: postgresql/index.md
+      - Instalación: postgresql/installation/index.md
+      - Configuración: postgresql/configuration/index.md
+      - Backup & Recovery: postgresql/backup-recovery/index.md
+      - Performance: postgresql/performance/index.md
+      - Replicación: postgresql/replication/index.md
+      - Seguridad: postgresql/security/index.md
+      - Monitoring: postgresql/monitoring/index.md
+      - Troubleshooting: postgresql/troubleshooting/index.md
+
+  # ORACLE - Nivel superior con icono
+  - 🏺 Oracle:
+      - Overview: oracle/index.md
+      - Instalación: oracle/installation/index.md
+      - Configuración: oracle/configuration/index.md
+      - Backup & Recovery: oracle/backup-recovery/index.md
+      - Performance: oracle/performance/index.md
+      - Replicación: oracle/replication/index.md
+      - Seguridad: oracle/security/index.md
+      - Monitoring: oracle/monitoring/index.md
+      - Troubleshooting: oracle/troubleshooting/index.md
+
+  # DB2 - Nivel superior con icono
+  - 🔷 DB2:
+      - Overview: db2/index.md
+      - Instalación: db2/installation/index.md
+      - Configuración: db2/configuration/index.md
+      - Backup & Recovery: db2/backup-recovery/index.md
+      - Performance: db2/performance/index.md
+      - Replicación: db2/replication/index.md
+      - Seguridad: db2/security/index.md
+      - Monitoring: db2/monitoring/index.md
+      - Troubleshooting: db2/troubleshooting/index.md
+
 
 plugins:
   - search
-  - git-revision-date-localized
 
 markdown_extensions:
   - admonition
@@ -41,3 +108,6 @@ markdown_extensions:
 extra:
   repo_url: https://github.com/Palomero96/Wiki_DBA
   repo_name: Palomero96/Wiki_DBA
+
+extra_css:
+  - stylesheets/extra.css
