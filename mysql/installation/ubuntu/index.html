@@ -14,22 +14,20 @@
       
       
       
-        <link rel="next" href="mysql/">
       
-      
-      <link rel="icon" href="assets/favicon.png">
+      <link rel="icon" href="../../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Wiki DBA</title>
+        <title>Ubuntu - Wiki DBA</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wiki-dba" class="md-skip">
+        <a href="#instalacion-de-mysql-en-ubuntu" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Wiki DBA" class="md-header__button md-logo" aria-label="Wiki DBA" data-md-component="logo">
+    <a href="../../.." title="Wiki DBA" class="md-header__button md-logo" aria-label="Wiki DBA" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏠 Inicio
+              Ubuntu
             
           </span>
         </div>
@@ -228,7 +226,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Wiki DBA" class="md-nav__button md-logo" aria-label="Wiki DBA" data-md-component="logo">
+    <a href="../../.." title="Wiki DBA" class="md-nav__button md-logo" aria-label="Wiki DBA" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
@@ -248,19 +246,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -271,7 +260,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -320,7 +308,7 @@
   
   
   
-    <a href="mysql/" class="md-nav__link">
+    <a href="../../" class="md-nav__link">
       
   
   
@@ -385,7 +373,7 @@
   
   
   
-    <a href="postgresql/" class="md-nav__link">
+    <a href="../../../postgresql/" class="md-nav__link">
       
   
   
@@ -450,7 +438,7 @@
   
   
   
-    <a href="oracle/" class="md-nav__link">
+    <a href="../../../oracle/" class="md-nav__link">
       
   
   
@@ -515,7 +503,7 @@
   
   
   
-    <a href="db2/" class="md-nav__link">
+    <a href="../../../db2/" class="md-nav__link">
       
   
   
@@ -556,6 +544,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice rápido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualizar el sistema
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-mysql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar MySQL Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar MySQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciar-y-habilitar-el-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciar y habilitar el servicio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificar-la-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar la instalación
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -570,21 +620,55 @@
 
 
 
-<h1 id="wiki-dba">🗃️ Wiki DBA</h1>
-<p>Bienvenido a la wiki de Administración de Bases de Datos.</p>
+<p><a href="../../">MySQL</a> / <a href="../">Instalación</a> / Ubuntu</p>
+<h1 id="instalacion-de-mysql-en-ubuntu">Instalación de MySQL en Ubuntu</h1>
+<p>Bienvenido a la guía de instalación de MySQL en Ubuntu. Esta guía cubre los pasos básicos para instalar MySQL desde los repositorios oficiales.</p>
+<h2 id="indice-rapido">Índice rápido</h2>
 <ul>
-<li><strong>MySQL</strong></li>
-<li><strong>PostgreSQL</strong></li>
-<li><strong>Oracle</strong></li>
-<li><strong>DB2</strong></li>
-<li><strong>General</strong></li>
+<li><a href="#actualizar-el-sistema">Actualizar el sistema</a></li>
+<li><a href="#instalar-mysql-server">Instalar MySQL Server</a></li>
+<li><a href="#configurar-mysql">Configurar MySQL</a></li>
+<li><a href="#iniciar-y-habilitar-el-servicio">Iniciar y habilitar el servicio</a></li>
+<li><a href="#verificar-la-instalacion">Verificar la instalación</a></li>
 </ul>
+<h2 id="actualizar-el-sistema">Actualizar el sistema</h2>
+<p>Antes de instalar cualquier paquete, actualiza la lista de paquetes:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</code></pre></div>
+
+<h2 id="instalar-mysql-server">Instalar MySQL Server</h2>
+<p>Instala el servidor MySQL desde los repositorios oficiales:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mysql-server<span class="w"> </span>-y
+</code></pre></div>
+
+<h2 id="configurar-mysql">Configurar MySQL</h2>
+<p>Ejecuta el script de seguridad de MySQL para configurar la contraseña del root y opciones básicas de seguridad:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>mysql_secure_installation
+</code></pre></div>
+
+<p>Sigue las instrucciones en pantalla para completar la configuración.</p>
+<h2 id="iniciar-y-habilitar-el-servicio">Iniciar y habilitar el servicio</h2>
+<p>Asegúrate de que el servicio de MySQL esté activo y se inicie automáticamente al arrancar el sistema:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>mysql
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>mysql
+</code></pre></div>
+
+<h2 id="verificar-la-instalacion">Verificar la instalación</h2>
+<p>Conéctate a MySQL para verificar que todo esté funcionando correctamente:</p>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div>
+
+<p>Si ves el prompt de MySQL, la instalación fue exitosa.</p>
+<hr />
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -603,28 +687,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="mysql/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Overview
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -651,10 +713,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
