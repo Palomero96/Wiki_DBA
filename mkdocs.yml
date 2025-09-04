@@ -1,0 +1,43 @@
+site_name: Wiki DBA
+site_description: Documentación de Administración de Bases de Datos
+site_author: Palomero96
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - MySQL:
+    - Overview: mysql/index.md
+    - Instalación: mysql/installation.md
+    - Optimización: mysql/optimization.md
+  - PostgreSQL:
+    - Overview: postgresql/index.md
+    - Backup & Recovery: postgresql/backup.md
+  - General:
+    - Best Practices: general/best-practices.md
+    - Troubleshooting: general/troubleshooting.md
+
+plugins:
+  - search
+  - git-revision-date-localized
+
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - codehilite
+
+extra:
+  repo_url: https://github.com/Palomero96/Wiki_DBA
+  repo_name: Palomero96/Wiki_DBA
